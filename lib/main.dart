@@ -1,4 +1,6 @@
-import 'package:diseno_app/src/widgets/headers.dart';
+import 'package:diseno_app/src/challenge/cuadrado_animado_page.dart';
+import 'package:diseno_app/src/pages/animaciones_page.dart';
+//import 'package:diseno_app/src/widgets/headers.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -9,10 +11,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: HeaderWaveGradient()
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home:  Scaffold(
+        body:  CuadradoAnimadoPage()
      ),
     );
   }
 }
+
